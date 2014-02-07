@@ -4,7 +4,7 @@ $(function() {
   // Default the list of repos to the uberVU/mozaic repo if nothing has been
   // submitted yet
   if (localStorage[STORAGE_KEY] === undefined) {
-    localStorage[STORAGE_KEY] = 'uberVU/mozaic';
+    localStorage[STORAGE_KEY] = 'infopark-customers/mpg-main';
   }
   // Create a list of clickable repos, loaded from local storage (saved from
   // the options page)
@@ -13,7 +13,7 @@ $(function() {
     path = githubRepos[i].split('/');
     user = path[0];
     repo = path[1];
-    href = 'https://github.com/' + path[0] + '/' + path[1] + '/issues/new';
+    href = 'https://github.com/' + path[0] + '/' + path[1] + '/compare';
     $('#repos').append('<li>' +
       '<a href="' + href + '">' + user + '/<strong>' + repo + '</strong></a>' +
     '</li>');
