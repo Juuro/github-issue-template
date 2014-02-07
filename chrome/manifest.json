@@ -1,6 +1,6 @@
 {
-  "name": "Github Pull Request Template",
-  "description": "Blueprint for Pull Request workflows.",
+  "name": "Pull Request Template",
+  "description": "Blueprint for quality assurance workflows.",
   "version": "0.1.0",
   "icons": {
     "16": "icon16.png",
