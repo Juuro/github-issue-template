@@ -1,33 +1,29 @@
 {
   "name": "Github Pull Request Template",
-  "version": "0.1.0",
-  "manifest_version": 2,
   "description": "Blueprint for Pull Request workflows.",
+  "version": "0.1.0",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png"
   },
+  "background": {
+    "scripts": [
+      "script/lib/jquery.min.js",
+      "script/background.js"
+    ]
+  },
   "permissions": [
-    "*://raw.github.com/",
-    "*://gist.github.com/",
-    "tabs"
-  ],
-  "content_scripts": [
-    {
-      "matches": ["*://github.com/*/compare/*"],
-      "js": [
-        "script/lib/jquery.min.js",
-        "script/lib/jquery.cursor-position.js",
-        "script/lib/jquery.select-range.js",
-        "script/new-issue-page.js"
-      ]
-    }
+    "tabs",
+    "clipboardRead",
+    "*://*.github.com/*"
   ],
   "browser_action": {
-    "default_icon": {
-      "19": "icon19.png"
-    },
-    "default_title": "Bring it on!"
+      "default_title": "Bring it on!",
+      "default_icon": {
+        "19": "icon19.png",
+        "38": "icon38.png"
+      }
   },
+  "manifest_version": 2,
   "options_page": "options.html"
 }
