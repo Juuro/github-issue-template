@@ -1,33 +1,27 @@
 {
-  "name": "Github Issue Template",
-  "version": "0.1.1",
-  "manifest_version": 2,
-  "description": "Backbone for structuring Github Issues",
+  "name": "Pull Request Template",
+  "description": "Blueprint for quality assurance workflows.",
+  "version": "0.1.0",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png"
   },
+  "background": {
+    "scripts": [
+      "script/background.js"
+    ]
+  },
   "permissions": [
-    "*://raw.github.com/",
-    "tabs"
-  ],
-  "content_scripts": [
-    {
-      "matches": ["*://github.com/*/issues/new"],
-      "js": [
-        "script/lib/jquery.min.js",
-        "script/lib/jquery.cursor-position.js",
-        "script/lib/jquery.select-range.js",
-        "script/new-issue-page.js"
-      ]
-    }
+    "tabs",
+    "clipboardRead",
+    "*://*.github.com/*"
   ],
   "browser_action": {
-    "default_icon": {
-      "19": "icon19.png"
-    },
-    "default_title": "Create new Github Issue",
-    "default_popup": "popup.html"
+      "default_title": "Bring it on!",
+      "default_icon": {
+        "19": "icon19.png",
+        "38": "icon38.png"
+      }
   },
-  "options_page": "options.html"
+  "manifest_version": 2
 }

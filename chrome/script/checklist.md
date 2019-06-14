@@ -1,0 +1,11 @@
+- [ ] Specs in MPG anlegen
+- [ ] Specs in MPI anlegen
+- [ ] MPG grün
+- [ ] MPI grün
+- [ ] Klicktest MPG
+- [ ] Klicktest MPI
+- [ ] Squash
+- [ ] Betriebsdoku
+- [ ] Programmiererdoku
+- [ ] Projektdoku
+- [ ] Review
